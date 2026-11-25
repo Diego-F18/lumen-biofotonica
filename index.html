@@ -409,7 +409,7 @@
                 </div>
 
                 <!-- Parámetros dosimétricos -->
-                <div class="dosimetry-bar fade-in" aria-label="Parámetros dosimétricos relevantes">
+                <div class="dosimetry-bar fade-in">
                     <h3 class="dosimetry-title">Parámetros dosimétricos relevantes</h3>
                     <div class="dosimetry-grid">
                         <div class="dosimetry-item">
@@ -553,21 +553,21 @@
                         <!-- Selector de tipo de tejido -->
                         <div class="control-group" id="ctrl-tissue">
                             <span class="control-label">Tipo de tejido</span>
-                            <div class="tissue-selector" role="radiogroup" aria-label="Seleccionar tipo de tejido">
-                                <button class="tissue-btn active" data-tissue="soft" id="tissue-soft" role="radio" aria-checked="true">
+                            <div class="tissue-selector" role="group" aria-label="Seleccionar tipo de tejido">
+                                <button type="button" class="tissue-btn active" data-tissue="soft" id="tissue-soft" aria-pressed="true">
                                     Tejido blando
                                 </button>
-                                <button class="tissue-btn" data-tissue="skin" id="tissue-skin" role="radio" aria-checked="false">
+                                <button type="button" class="tissue-btn" data-tissue="skin" id="tissue-skin" aria-pressed="false">
                                     Piel
                                 </button>
-                                <button class="tissue-btn" data-tissue="muscle" id="tissue-muscle" role="radio" aria-checked="false">
+                                <button type="button" class="tissue-btn" data-tissue="muscle" id="tissue-muscle" aria-pressed="false">
                                     Músculo
                                 </button>
                             </div>
                         </div>
 
                         <!-- Métricas calculadas -->
-                        <div class="explorer-metrics" aria-label="Métricas calculadas" aria-live="polite">
+                        <div class="explorer-metrics" aria-live="polite">
                             <div class="metric-item">
                                 <span class="metric-label">Profundidad de penetración (δ)</span>
                                 <span class="metric-value" id="metric-depth">3.2 mm</span>
@@ -585,7 +585,7 @@
                     </aside>
 
                     <!-- Canvas de visualización -->
-                    <div class="explorer-canvas-wrapper" aria-label="Visualización de propagación de luz en tejido">
+                    <div class="explorer-canvas-wrapper">
                         <canvas
                             id="tissue-canvas"
                             width="480"
@@ -593,7 +593,7 @@
                             aria-label="Diagrama conceptual de propagación de luz en tejido biológico"
                             role="img"
                         ></canvas>
-                        <div class="canvas-legend" aria-label="Leyenda">
+                        <div class="canvas-legend">
                             <div class="legend-item">
                                 <span class="legend-dot" style="background:#B9434A"></span>
                                 <span>Haz incidente</span>
@@ -640,7 +640,7 @@
                         <p>El objetivo es construir una plataforma educativa que integre contenido científico riguroso con herramientas de visualización interactiva, accesibles para estudiantes de ciencias biomédicas y público especializado.</p>
                         <p>El proyecto abarca tres etapas: fundamentación teórica, modelado conceptual interactivo y evaluación de la comunicación científica digital.</p>
 
-                        <div class="project-tags" aria-label="Áreas temáticas del proyecto">
+                        <div class="project-tags">
                             <span class="proj-tag">Óptica tisular</span>
                             <span class="proj-tag">Fotobiomodulación</span>
                             <span class="proj-tag">Ingeniería biomédica</span>
@@ -714,7 +714,7 @@
                                 Ejemplo: src="assets/foto-nombre.jpg"
                                 El alt debe describir a la persona, no decir "foto de perfil" genérico.
                             -->
-                            <div class="team-avatar-placeholder" aria-label="Fotografía por proporcionar">
+                            <div class="team-avatar-placeholder">
                                 <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -732,7 +732,7 @@
                     <!-- Integrante 2 — Completar con datos reales -->
                     <li class="team-card fade-in" id="team-member-2">
                         <div class="team-avatar-wrap">
-                            <div class="team-avatar-placeholder" aria-label="Fotografía por proporcionar">
+                            <div class="team-avatar-placeholder">
                                 <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -750,7 +750,7 @@
                     <!-- Integrante 3 — Completar con datos reales -->
                     <li class="team-card fade-in" id="team-member-3">
                         <div class="team-avatar-wrap">
-                            <div class="team-avatar-placeholder" aria-label="Fotografía por proporcionar">
+                            <div class="team-avatar-placeholder">
                                 <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                         </div>

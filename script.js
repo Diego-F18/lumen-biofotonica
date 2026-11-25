@@ -468,10 +468,10 @@ function initExplorer() {
             // Actualiza botones activos
             tissueButtons.forEach(b => {
                 b.classList.remove('active');
-                b.setAttribute('aria-checked', 'false');
+                b.setAttribute('aria-pressed', 'false');
             });
             btn.classList.add('active');
-            btn.setAttribute('aria-checked', 'true');
+            btn.setAttribute('aria-pressed', 'true');
 
             // Aplica preajuste en los sliders
             sliderAbs.value  = preset.mua;
