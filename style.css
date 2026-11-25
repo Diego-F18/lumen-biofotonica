@@ -540,6 +540,9 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 20px;
     color: var(--icon-color, var(--navy));
 }
+.feature-icon-absorption { --icon-color: #B9434A; }
+.feature-icon-scattering { --icon-color: #A9B6C7; }
+.feature-icon-wavelength { --icon-color: #4a90a4; }
 .feature-icon svg {
     width: 32px;
     height: 32px;
@@ -718,6 +721,10 @@ h1, h2, h3, h4, h5 {
     font-size: 0.85rem;
     flex-shrink: 0;
 }
+.cascade-icon-absorption { --step-color: #B9434A; }
+.cascade-icon-redox { --step-color: #A9B6C7; }
+.cascade-icon-signaling { --step-color: #4a90a4; }
+.cascade-icon-gene { --step-color: #2d7a4a; }
 
 .cascade-content h4 {
     font-size: 0.92rem;
@@ -1025,6 +1032,9 @@ h1, h2, h3, h4, h5 {
     border-radius: 50%;
     flex-shrink: 0;
 }
+.legend-dot-incident { background: #B9434A; }
+.legend-dot-scattered { background: #A9B6C7; }
+.legend-dot-fluence { background: #2d7a4a; }
 
 /* ------------------------------------------------------------------
    11. PROYECTO
@@ -1110,12 +1120,17 @@ h1, h2, h3, h4, h5 {
     color: var(--ivory);
     letter-spacing: 0.04em;
 }
+.p-card-header-icon { color: #B9434A; }
 .p-card-line   { height: 8px;  background: rgba(169,182,199,0.2); border-radius: 4px; }
 .p-card-line.short   { width: 65%; }
 .p-card-line.shorter { width: 40%; }
 .p-card-dot { width: 24px; height: 24px; border-radius: 50%; background: var(--dot-c, #A9B6C7); opacity: 0.7; align-self: flex-end; }
+.p-card-dot-slate { --dot-c: #A9B6C7; }
+.p-card-dot-teal { --dot-c: #4a90a4; }
 .p-card-bar { height: 6px; background: rgba(169,182,199,0.15); border-radius: 3px; overflow: hidden; }
 .p-card-bar-fill { height: 100%; border-radius: 3px; }
+.p-card-bar-fill-primary { width: 68%; background: #B9434A; }
+.p-card-bar-fill-secondary { width: 45%; background: #A9B6C7; }
 
 /* ------------------------------------------------------------------
    12. EQUIPO
@@ -1242,6 +1257,7 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border);
 }
+.ref-group-title-academic { margin-top: 32px; }
 
 .ref-list {
     list-style: none;
@@ -1460,6 +1476,12 @@ h1, h2, h3, h4, h5 {
 
 .layers { transform: rotateX(62deg) rotateZ(-30deg); animation: sway 12s ease-in-out infinite alternate; }
 .layer { position: absolute; inset: 0; border-radius: 14px; border: 1px solid rgba(169, 182, 199, 0.45); box-shadow: 0 0 30px rgba(0, 0, 0, 0.35); transform: translateZ(var(--z)); background: linear-gradient(135deg, var(--c1), var(--c2)); }
+.layer-subcutaneous { --z: -57px; --c1: #5c3d45; --c2: #3b2a38; }
+.layer-dermis { --z: -19px; --c1: #7a4a52; --c2: #4e3340; }
+.layer-epidermis { --z: 19px; --c1: #9a5c60; --c2: #6b4048; }
+.layer-evaluation { --z: -57px; --c1: #2d6a7a; --c2: #1c4658; }
+.layer-modeling { --z: -19px; --c1: #3a7f90; --c2: #245566; }
+.layer-theory { --z: 19px; --c1: #4a90a4; --c2: #2d6577; }
 .layer span { position: absolute; left: 12px; bottom: 8px; font: 500 0.72rem var(--font-mono); color: var(--text-strong); }
 .ray { position: absolute; left: 50%; top: 50%; width: 5px; height: 190px; transform: translate(-50%, -50%) rotateX(90deg); background: linear-gradient(180deg, var(--red), rgba(185, 67, 74, 0)); border-radius: 4px; box-shadow: 0 0 18px var(--red); }
 @keyframes sway { from { transform: rotateX(62deg) rotateZ(-50deg); } to { transform: rotateX(62deg) rotateZ(-8deg); } }

@@ -215,7 +215,7 @@
                         <p>Cuando un haz de luz entra en la piel, cada fotón puede seguir tres caminos: <strong>ser absorbido</strong> por cromóforos como hemoglobina, melanina o agua, <strong>dispersarse</strong> al chocar con estructuras celulares, o <strong>atravesar</strong> la capa y seguir avanzando.</p>
                         <p>La figura muestra el tejido como capas (epidermis, dermis y tejido subcutáneo). Con cada capa el haz pierde intensidad, y por eso la profundidad que alcanza depende de la longitud de onda.</p>
                     </div>
-                    <div class="scene" role="img" aria-label="Ilustración 3D de un haz de luz atravesando tres capas de tejido"><div class="s3d layers"><div class="layer" style="--z:-57px;--c1:#5c3d45;--c2:#3b2a38"><span>Subcutáneo</span></div><div class="layer" style="--z:-19px;--c1:#7a4a52;--c2:#4e3340"><span>Dermis</span></div><div class="layer" style="--z:19px;--c1:#9a5c60;--c2:#6b4048"><span>Epidermis</span></div><div class="ray"></div></div></div>
+                    <div class="scene" role="img" aria-label="Ilustración 3D de un haz de luz atravesando tres capas de tejido"><div class="s3d layers"><div class="layer layer-subcutaneous"><span>Subcutáneo</span></div><div class="layer layer-dermis"><span>Dermis</span></div><div class="layer layer-epidermis"><span>Epidermis</span></div><div class="ray"></div></div></div>
                 </div>
 
 
@@ -223,7 +223,7 @@
 
                     <!-- Tarjeta: Absorción -->
                     <li class="feature-card fade-in" id="card-absorcion">
-                        <div class="feature-icon" style="--icon-color: #B9434A;" aria-hidden="true">
+                        <div class="feature-icon feature-icon-absorption" aria-hidden="true">
                             <!-- Diagrama SVG: absorción -->
                             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <line x1="20" y1="4" x2="20" y2="20" stroke="#B9434A" stroke-width="2.5" stroke-linecap="round"/>
@@ -248,7 +248,7 @@
 
                     <!-- Tarjeta: Dispersión -->
                     <li class="feature-card fade-in" id="card-dispersion">
-                        <div class="feature-icon" style="--icon-color: #A9B6C7;" aria-hidden="true">
+                        <div class="feature-icon feature-icon-scattering" aria-hidden="true">
                             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <line x1="8" y1="20" x2="20" y2="20" stroke="#A9B6C7" stroke-width="2.5" stroke-linecap="round"/>
                                 <circle cx="20" cy="20" r="5" fill="#A9B6C7" opacity="0.2" stroke="#A9B6C7" stroke-width="1.5"/>
@@ -275,7 +275,7 @@
 
                     <!-- Tarjeta: Longitud de onda -->
                     <li class="feature-card fade-in" id="card-lambda">
-                        <div class="feature-icon" style="--icon-color: #4a90a4;" aria-hidden="true">
+                        <div class="feature-icon feature-icon-wavelength" aria-hidden="true">
                             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <!-- Onda sinusoidal -->
                                 <path d="M4 22 Q10 10 16 22 Q22 34 28 22 Q34 10 40 22" stroke="#4a90a4" stroke-width="2" fill="none"/>
@@ -347,7 +347,7 @@
 
                         <p>El mecanismo más estudiado implica la absorción de fotones por la <strong>citocromo c oxidasa (CCO)</strong>, subunidad IV de la cadena respiratoria mitocondrial, lo que desencadena una cascada de señalización intracelular.</p>
 
-                        <div class="fbm-disclaimer" role="note" aria-label="Nota sobre estado de la evidencia">
+                        <div class="fbm-disclaimer" role="note">
                             <i class="fas fa-triangle-exclamation" aria-hidden="true"></i>
                             <p>Los mecanismos celulares descritos corresponden a modelos experimentales. Las aplicaciones clínicas específicas requieren validación clínica independiente y no deben interpretarse como indicaciones terapéuticas establecidas.</p>
                         </div>
@@ -356,7 +356,7 @@
                     <!-- Diagrama de cascada -->
                     <div class="fbm-diagram fade-in" aria-label="Diagrama de la cascada fotobiomoduladora" role="img">
                         <div class="cascade-step" id="cascade-1">
-                            <div class="cascade-icon" style="--step-color: #B9434A;" aria-hidden="true">
+                            <div class="cascade-icon cascade-icon-absorption" aria-hidden="true">
                                 <i class="fas fa-circle-dot"></i>
                             </div>
                             <div class="cascade-content">
@@ -369,7 +369,7 @@
                         <div class="cascade-connector" aria-hidden="true"></div>
 
                         <div class="cascade-step" id="cascade-2">
-                            <div class="cascade-icon" style="--step-color: #A9B6C7;" aria-hidden="true">
+                            <div class="cascade-icon cascade-icon-redox" aria-hidden="true">
                                 <i class="fas fa-bolt"></i>
                             </div>
                             <div class="cascade-content">
@@ -382,7 +382,7 @@
                         <div class="cascade-connector" aria-hidden="true"></div>
 
                         <div class="cascade-step" id="cascade-3">
-                            <div class="cascade-icon" style="--step-color: #4a90a4;" aria-hidden="true">
+                            <div class="cascade-icon cascade-icon-signaling" aria-hidden="true">
                                 <i class="fas fa-arrow-trend-up"></i>
                             </div>
                             <div class="cascade-content">
@@ -395,7 +395,7 @@
                         <div class="cascade-connector" aria-hidden="true"></div>
 
                         <div class="cascade-step" id="cascade-4">
-                            <div class="cascade-icon" style="--step-color: #2d7a4a;" aria-hidden="true">
+                            <div class="cascade-icon cascade-icon-gene" aria-hidden="true">
                                 <i class="fas fa-dna"></i>
                             </div>
                             <div class="cascade-content">
@@ -595,15 +595,15 @@
                         ></canvas>
                         <div class="canvas-legend">
                             <div class="legend-item">
-                                <span class="legend-dot" style="background:#B9434A"></span>
+                                <span class="legend-dot legend-dot-incident"></span>
                                 <span>Haz incidente</span>
                             </div>
                             <div class="legend-item">
-                                <span class="legend-dot" style="background:#A9B6C7"></span>
+                                <span class="legend-dot legend-dot-scattered"></span>
                                 <span>Fotones dispersados</span>
                             </div>
                             <div class="legend-item">
-                                <span class="legend-dot" style="background:#2d7a4a"></span>
+                                <span class="legend-dot legend-dot-fluence"></span>
                                 <span>Zona de fluencia</span>
                             </div>
                         </div>
@@ -626,7 +626,7 @@
                         <p>El proyecto se construye por capas: primero la <strong>teoría</strong> que sustenta el contenido, luego el <strong>modelado</strong> interactivo y, por último, la <strong>evaluación</strong> de qué tan bien comunica la página.</p>
                         <p>Cada etapa se apoya en la anterior, igual que las capas de la figura.</p>
                     </div>
-                    <div class="scene" role="img" aria-label="Ilustración 3D con tres capas: teoría, modelado y evaluación"><div class="s3d layers"><div class="layer" style="--z:-57px;--c1:#2d6a7a;--c2:#1c4658"><span>3. Evaluación</span></div><div class="layer" style="--z:-19px;--c1:#3a7f90;--c2:#245566"><span>2. Modelado</span></div><div class="layer" style="--z:19px;--c1:#4a90a4;--c2:#2d6577"><span>1. Teoría</span></div><div class="ray"></div></div></div>
+                    <div class="scene" role="img" aria-label="Ilustración 3D con tres capas: teoría, modelado y evaluación"><div class="s3d layers"><div class="layer layer-evaluation"><span>3. Evaluación</span></div><div class="layer layer-modeling"><span>2. Modelado</span></div><div class="layer layer-theory"><span>1. Teoría</span></div><div class="ray"></div></div></div>
                 </div>
 
                 <div class="project-layout">
@@ -657,26 +657,26 @@
                             <div class="p-card p-card-back">
                                 <div class="p-card-line"></div>
                                 <div class="p-card-line short"></div>
-                                <div class="p-card-dot" style="--dot-c:#A9B6C7"></div>
+                                <div class="p-card-dot p-card-dot-slate"></div>
                             </div>
                             <div class="p-card p-card-mid">
                                 <div class="p-card-line"></div>
                                 <div class="p-card-line short"></div>
-                                <div class="p-card-dot" style="--dot-c:#4a90a4"></div>
+                                <div class="p-card-dot p-card-dot-teal"></div>
                             </div>
                             <div class="p-card p-card-front">
                                 <div class="p-card-header">
-                                    <i class="fas fa-circle-dot" style="color:#B9434A"></i>
+                                    <i class="fas fa-circle-dot p-card-header-icon"></i>
                                     <span>LUMEN BIOPHOTONICS</span>
                                 </div>
                                 <div class="p-card-line"></div>
                                 <div class="p-card-line short"></div>
                                 <div class="p-card-line shorter"></div>
                                 <div class="p-card-bar">
-                                    <div class="p-card-bar-fill" style="width:68%; background:#B9434A"></div>
+                                    <div class="p-card-bar-fill p-card-bar-fill-primary"></div>
                                 </div>
                                 <div class="p-card-bar">
-                                    <div class="p-card-bar-fill" style="width:45%; background:#A9B6C7"></div>
+                                    <div class="p-card-bar-fill p-card-bar-fill-secondary"></div>
                                 </div>
                             </div>
                         </div>
@@ -785,7 +785,7 @@
 
                     <div class="references-col">
                         <h3 class="ref-group-title">Referencias bibliográficas principales</h3>
-                        <ol class="ref-list" aria-label="Lista de referencias">
+                        <ol class="ref-list">
                             <li>
                                 <span class="ref-authors">Tuchin, V. V.</span>
                                 <span class="ref-title">Tissue Optics: Light Scattering Methods and Instruments for Medical Diagnostics.</span>
@@ -816,7 +816,7 @@
 
                     <div class="references-col">
                         <h3 class="ref-group-title">Créditos y atribuciones</h3>
-                        <ul class="credits-list" aria-label="Créditos de recursos utilizados">
+                        <ul class="credits-list">
                             <li>
                                 <strong>Plantilla base:</strong> FlowState Landing Page —
                                 <a href="https://github.com/AmiARMiess" target="_blank" rel="noopener noreferrer">DragonARMY</a>.
@@ -838,7 +838,7 @@
                             </li>
                         </ul>
 
-                        <h3 class="ref-group-title" style="margin-top:32px;">Aviso académico</h3>
+                        <h3 class="ref-group-title ref-group-title-academic">Aviso académico</h3>
                         <p class="ref-note">Este proyecto tiene finalidad educativa. El contenido científico está basado en literatura revisada por pares. Las visualizaciones interactivas son modelos conceptuales simplificados y no constituyen herramientas de diagnóstico ni de prescripción clínica.</p>
                     </div>
 
@@ -851,7 +851,7 @@
     <!-- ============================================================
          FOOTER
     ============================================================ -->
-    <footer class="footer" id="footer" role="contentinfo">
+    <footer class="footer" id="footer">
         <div class="container footer-inner">
             <div class="footer-brand">
                 <span class="footer-logo">
